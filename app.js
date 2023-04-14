@@ -1,5 +1,5 @@
 
-const app =require("./server")
+const server =require("./server")
 const connectDatabase=require("./src/configs/database")
 
 //config
@@ -13,6 +13,6 @@ connectDatabase()
 //   console.log("no connection")
 // })
    
-app.listen(3000,()=>{
+server.listen(3000,()=>{
   console.log(`server is working on http://localhost:${3000}`)
 })

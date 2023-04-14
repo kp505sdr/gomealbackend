@@ -2,21 +2,21 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const cors =require('cors')
-const app = express()
+const server = express()
 // user:
 // karandp0011
 // pass:
 // Kp505123
 
 
-app.use(bodyParser.json({limit: '25mb'}))
-app.use(bodyParser.urlencoded({limit: '25mb', extended: false}))
-app.use(cors());
-app.set("view engine", "ejs");
+server.use(bodyParser.json({limit: '25mb'}))
+server.use(bodyParser.urlencoded({limit: '25mb', extended: false}))
+server.use(cors());
+server.set("view engine", "ejs");
 
 //Main Route Import
 const all_routs=require("./src/routes/studentRoot")
 
-app.use("/api/v1",all_routs)
+server.use("/api/v1",all_routs)
 
-module.exports=app
+module.exports=server
