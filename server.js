@@ -13,6 +13,6 @@ connectDatabase()
 //   console.log("no connection")
 // })
    
-app.listen(process.env.PORT,()=>{
-  console.log(`server is working on http://localhost:${process.env.PORT}`)
+app.listen(3000,()=>{
+  console.log(`server is working on http://localhost:${3000}`)
 })
