@@ -4,8 +4,6 @@ const bodyParser = require('body-parser')
 const cors =require('cors')
 const connectDatabase=require("./src/configs/database")
 
-//config
-
 const app = express()
 //database connection
 connectDatabase()
