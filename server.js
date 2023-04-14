@@ -1,9 +1,9 @@
-const dotenv=require("dotenv")
+
 const app =require("./app")
 const connectDatabase=require("./src/configs/database")
 
 //config
-dotenv.config({path:"src/configs/config.env"})
+
 
 //database connection
 connectDatabase()
